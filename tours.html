@@ -1,0 +1,40 @@
+<!-- Сайт розроблено студенткою Владиславою Василевською, група 3з, ФЕМП -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Тури - Туристична агенція</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Наші тури</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="tours.html">Тури</a></li>
+        <li><a href="about.html">Про агенцію</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Доступні тури</h2>
+    <div>
+      <label>Фільтр за ціною: від <input type="number" id="minPrice"> до <input type="number" id="maxPrice"> 
+      <button onclick="filterTours()">Фільтрувати</button></label>
+      <select id="currency" onchange="changeCurrency()">
+        <option value="UAH">UAH</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </div>
+    <div id="tours"></div>
+    <h3>Мої бронювання</h3>
+    <div id="bookings"></div>
+  </main>
+  <footer>
+    <p>Виконав(ла): Владислава Василевська, група 3з, ФЕМП</p>
+  </footer>
+</body>
+</html>
